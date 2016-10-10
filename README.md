@@ -5,9 +5,9 @@
 
 2. git clone this repo to your local machine
 
-3. run command - **_gem install bundler_**'
+3. run command - **_gem install bundler_**
 
-4. run command - **_bunle install_**'
+4. run command - **_bunle install_**
 
 5. cd into the root folder of the project - **_cd seesaw_**
 
@@ -19,5 +19,4 @@ be present.
 
 
 
-**This app is executed from the console. It makes a request to a given API Endpoint
-and outputs the response as a CSV file.**
+**This app is executed from the console. It makes a request to a given API Endpoint and outputs the response as a CSV file.**

@@ -7,7 +7,7 @@
 
 3. run command - **_gem install bundler_**
 
-4. run command - **_bunle install_**
+4. run command - **_bundle install_**
 
 5. cd into the root folder of the project - **_cd seesaw_**
 

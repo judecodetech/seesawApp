@@ -15,11 +15,11 @@ json_data = JSON.parse(response.body) # parse json data from response
 
 # Set options for CSV processing
 options = {   col_sep: ' | ', 
-			  headers: true, 
-			  row_sep: "\n\n",
-			  :converters => lambda do |field|
-             	field.to_s.tr('"','')
-           	  end
+	      headers: true, 
+	      row_sep: "\n\n",
+	      :converters => lambda do |field|
+             	   field.to_s.tr('"','')
+              end
        	   }
 
 # Open CSV file for writing
@@ -41,8 +41,8 @@ CSV.open("output.csv", "w", options) do |csv|
 
 		# write rows to CSV
 		csv << [  data['value']['_id'], data['value']['_rev'], data['value']['col1'],
-				  data['value']['col2'], data['value']['col3'], data['value']['col4'],
-				  data['value']['col5'], data['value']['col6'], subObjects['a'], subObjects['b']
-				]
+			  data['value']['col2'], data['value']['col3'], data['value']['col4'],
+			  data['value']['col5'], data['value']['col6'], subObjects['a'], subObjects['b']
+			]
 	end
 end
